@@ -10,7 +10,7 @@
         </Resources>
     </Header>
     <Library>
-        <PortProperties routable="true" hardWired="false" isblank="false" unet="gnd" clock="true" isInvertible="false" isAsynchronous="false" />
+        <PortProperties routable="true" hardWired="false" isblank="false" unet="gnd" clock="true" isInvertible="false" clockPort="false" isAsynchronous="false" />
         <LOGIC name="LOGIC">
             <INPUT>
                 <mport name="QST" isAsynchronous="true"></mport>
@@ -54,98 +54,98 @@
         </LOGIC>
         <RAM name="RAM">
             <INPUT>
-                <mport name="WD_0[17:0]" clock="true">
+                <mport name="WD_0[17:0]">
                     <bus name="WD_0" msb="17" lsb="0" step="1" />
                 </mport>
-                <mport name="FIFO_EN_0" routable="false" />
-                <mport name="SYNC_FIFO_0" routable="false" />
-                <mport name="CLK1EN_0" clock="true" />
-                <mport name="PIPELINE_RD_0" routable="false" />
-                <mport name="CLK1_0" clock="true" />
+                <mport name="FIFO_EN_0" />
+                <mport name="SYNC_FIFO_0" />
+                <mport name="CLK1EN_0" />
+                <mport name="PIPELINE_RD_0" />
+                <mport name="CLK1_0" isInvertible="true" clockPort="true" />
                 <mport name="CLK1S_0" routable="false" />
-                <mport name="CLK2_0" clock="true" />
+                <mport name="CLK2_0" isInvertible="true" clockPort="true"  />
                 <mport name="CLK2S_0" routable="false" />
-                <mport name="A1_0[10:0]" clock="true">
+                <mport name="A1_0[10:0]" >
                     <bus name="A1_0" msb="10" lsb="0" step="1" />
                 </mport>
-                <mport name="CONCAT_EN_0" routable="false" />
-                <mport name="CLK2EN_0" clock="true" />
-                <mport name="ASYNC_FLUSH_0" clock="true" unet="vcc" />
+                <mport name="CONCAT_EN_0" />
+                <mport name="CLK2EN_0" />
+                <mport name="ASYNC_FLUSH_0" isInvertible="true" />
                 <mport name="ASYNC_FLUSH_S0" routable="false" />
-                <mport name="CS1_0" clock="true" />
-                <mport name="WEN1_0[1:0]" clock="true">
+                <mport name="CS1_0" />
+                <mport name="WEN1_0[1:0]" >
                     <bus name="WEN1_0" msb="1" lsb="0" step="1" />
                 </mport>
-                <mport name="WIDTH_SELECT1_0[1:0]" routable="false">
+                <mport name="WIDTH_SELECT1_0[1:0]" >
                     <bus name="WIDTH_SELECT1_0" msb="1" lsb="0" step="1" />
                 </mport>
-                <mport name="P2_0" clock="true" />
-                <mport name="P1_0" clock="true" />
-                <mport name="DIR_0" clock="true" />
-                <mport name="CS2_0" clock="true" />
-                <mport name="A2_0[10:0]" clock="true">
+                <mport name="P2_0" />
+                <mport name="P1_0" />
+                <mport name="DIR_0" />
+                <mport name="CS2_0" />
+                <mport name="A2_0[10:0]" >
                     <bus name="A2_0" msb="10" lsb="0" step="1" />
                 </mport>
-                <mport name="WIDTH_SELECT2_0[1:0]" routable="false">
+                <mport name="WIDTH_SELECT2_0[1:0]" >
                     <bus name="WIDTH_SELECT2_0" msb="1" lsb="0" step="1" />
                 </mport>
-                <mport name="WD_1[17:0]" clock="true" isblank="true">
+                <mport name="WD_1[17:0]" isblank="true">
                     <bus name="WD_1" msb="17" lsb="0" step="1" />
                 </mport>
-                <mport name="FIFO_EN_1" routable="false" isblank="true" />
-                <mport name="SYNC_FIFO_1" routable="false" isblank="true" />
-                <mport name="CLK1EN_1" clock="true" isblank="true" />
-                <mport name="PIPELINE_RD_1" routable="false" isblank="true" />
-                <mport name="CLK1_1" clock="true" isblank="true" />
+                <mport name="FIFO_EN_1" isblank="true" />
+                <mport name="SYNC_FIFO_1" />
+                <mport name="CLK1EN_1" />
+                <mport name="PIPELINE_RD_1" />
+                <mport name="CLK1_1" isblank="true" isInvertible="true" clockPort="true" />
                 <mport name="CLK1S_1" routable="false" isblank="true" />
-                <mport name="CLK2_1" clock="true" isblank="true" />
+                <mport name="CLK2_1" isblank="true" isInvertible="true" clockPort="true" />
                 <mport name="CLK2S_1" routable="false" isblank="true" />
-                <mport name="A1_1[10:0]" clock="true" isblank="true">
+                <mport name="A1_1[10:0]" isblank="true">
                     <bus name="A1_1" msb="10" lsb="0" step="1" />
                 </mport>
-                <mport name="CONCAT_EN_1" routable="false" isblank="true" />
-                <mport name="CLK2EN_1" clock="true" isblank="true" />
-                <mport name="ASYNC_FLUSH_1" clock="true" isblank="true" unet="vcc" />
+                <mport name="CONCAT_EN_1" isblank="true" />
+                <mport name="CLK2EN_1" isblank="true" />
+                <mport name="ASYNC_FLUSH_1" isblank="true" isInvertible="true" />
                 <mport name="ASYNC_FLUSH_S1" routable="false" isblank="true" />
-                <mport name="WIDTH_SELECT1_1[1:0]" routable="false" isblank="true">
+                <mport name="WIDTH_SELECT1_1[1:0]" isblank="true">
                     <bus name="WIDTH_SELECT1_1" msb="1" lsb="0" step="1" />
                 </mport>
-                <mport name="CS1_1" clock="true" isblank="true" />
-                <mport name="WEN1_1[1:0]" clock="true" isblank="true">
+                <mport name="CS1_1" isblank="true" />
+                <mport name="WEN1_1[1:0]" isblank="true">
                     <bus name="WEN1_1" msb="1" lsb="0" step="1" />
                 </mport>
-                <mport name="P2_1" clock="true" isblank="true" />
-                <mport name="P1_1" clock="true" isblank="true" />
-                <mport name="DIR_1" clock="true" isblank="true" />
-                <mport name="CS2_1" clock="true" isblank="true" />
-                <mport name="A2_1[10:0]" clock="true" isblank="true">
+                <mport name="P2_1" isblank="true" />
+                <mport name="P1_1" isblank="true" />
+                <mport name="DIR_1" isblank="true" />
+                <mport name="CS2_1" isblank="true" />
+                <mport name="A2_1[10:0]" isblank="true">
                     <bus name="A2_1" msb="10" lsb="0" step="1" />
                 </mport>
-                <mport name="WIDTH_SELECT2_1[1:0]" routable="false" isblank="true">
+                <mport name="WIDTH_SELECT2_1[1:0]" isblank="true">
                     <bus name="WIDTH_SELECT2_1" msb="1" lsb="0" step="1" />
                 </mport>
             </INPUT>
             <OUTPUT>
-                <mport name="PUSH_FLAG_0[3:0]" stage3="true">
+                <mport name="PUSH_FLAG_0[3:0]" >
                     <bus name="PUSH_FLAG_0" msb="3" lsb="0" step="1" />
                 </mport>
-                <mport name="Almost_Full_0" stage3="true" />
-                <mport name="POP_FLAG_0[3:0]" stage3="true">
+                <mport name="Almost_Full_0" />
+                <mport name="POP_FLAG_0[3:0]" >
                     <bus name="POP_FLAG_0" msb="3" lsb="0" step="1" />
                 </mport>
-                <mport name="Almost_Empty_0" stage3="true" />
-                <mport name="RD_0[17:0]" stage3="true">
+                <mport name="Almost_Empty_0" />
+                <mport name="RD_0[17:0]" >
                     <bus name="RD_0" msb="17" lsb="0" step="1" />
                 </mport>
-                <mport name="PUSH_FLAG_1[3:0]" stage3="true" isblank="true">
+                <mport name="PUSH_FLAG_1[3:0]" isblank="true">
                     <bus name="PUSH_FLAG_1" msb="3" lsb="0" step="1" />
                 </mport>
-                <mport name="Almost_Full_1" isblank="true" stage3="true" />
+                <mport name="Almost_Full_1" isblank="true" />
                 <mport name="POP_FLAG_1[3:0]" isblank="true">
                     <bus name="POP_FLAG_1" msb="3" lsb="0" step="1" />
                 </mport>
-                <mport name="Almost_Empty_1" isblank="true" stage3="true" />
-                <mport name="RD_1[17:0]" stage3="true" isblank="true">
+                <mport name="Almost_Empty_1" isblank="true" />
+                <mport name="RD_1[17:0]" isblank="true">
                     <bus name="RD_1" msb="17" lsb="0" step="1" />
                 </mport>
             </OUTPUT>
