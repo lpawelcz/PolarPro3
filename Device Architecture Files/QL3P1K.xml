@@ -8610,13 +8610,13 @@
             </BankQuads>
             <BankInfo>
                 <BANK0 index="0" Bits="222" StartBit="0" Quadrant="TL" />
-                <BANK1 index="4" Bits="221" StartBit="222" Quadrant="TL" />
-                <BANK2 index="5" Bits="222" StartBit="664" Quadrant="TR" />
-                <BANK3 index="1" Bits="221" StartBit="443" Quadrant="TR" />
-                <BANK4 index="2" Bits="222" StartBit="0" Quadrant="BL" />
-                <BANK5 index="6" Bits="221" StartBit="222" Quadrant="BL" />
-                <BANK6 index="7" Bits="222" StartBit="664" Quadrant="BR" />
-                <BANK7 index="3" Bits="221" StartBit="443" Quadrant="BR" />
+                <BANK1 index="1" Bits="222" StartBit="443" Quadrant="TR" />
+                <BANK2 index="2" Bits="222" StartBit="0" Quadrant="BL" />
+                <BANK3 index="3" Bits="223" StartBit="443" Quadrant="BR" />
+                <BANK4 index="4" Bits="221" StartBit="222" Quadrant="TL" />
+                <BANK5 index="5" Bits="221" StartBit="664" Quadrant="TR" />
+                <BANK6 index="6" Bits="221" StartBit="222" Quadrant="BL" />
+                <BANK7 index="7" Bits="221" StartBit="664" Quadrant="BR" />
             </BankInfo>
         </ConfigBitBanks>
     </Programming>
